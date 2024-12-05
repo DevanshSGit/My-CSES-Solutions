@@ -5,8 +5,13 @@ using ll = long long;
 
 int main() {
 
-    ll t, x, y, z, z1, res;
-    cin >> t;
+    // distinct permutations
+    // n!/a!b!c!.....
+
+    string str;
+    cin >> str;
+
+    cout << str;
 
     return 0;
 
