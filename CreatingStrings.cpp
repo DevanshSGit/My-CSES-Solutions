@@ -11,7 +11,9 @@ int main() {
     string str;
     cin >> str;
 
-    cout << str;
+    for (int i = 0; i < str.length(); ++i) {
+       cout << str[i] << ' ';
+    }
 
     return 0;
 
