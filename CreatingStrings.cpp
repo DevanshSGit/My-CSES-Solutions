@@ -14,8 +14,8 @@ int main() {
     }
     while (next_permutation(str.begin(), str.end()));
     cout << res.size() << '\n';
-    for (string a : res) {
-        cout << a << '\n';
+    for (string s : res) {
+        cout << s << '\n';
     }
 
     return 0;
