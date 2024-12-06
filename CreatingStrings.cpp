@@ -5,18 +5,18 @@ using ll = long long;
 
 int main() {
 
-    // distinct permutations
-    // n!/a!b!c!.....
-
     string str;
     cin >> str;
-    cout << '\n';
-
+    sort(str.begin(), str.end());
+    vector<string> res;
     do {
-        cout << str << '\n';
+        res.push_back(str);
     }
     while (next_permutation(str.begin(), str.end()));
-    cout << str << '\n';
+    cout << res.size() << '\n';
+    for (string s : res) {
+        cout << s << '\n';
+    }
 
     return 0;
 
