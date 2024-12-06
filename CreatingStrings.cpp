@@ -10,10 +10,13 @@ int main() {
 
     string str;
     cin >> str;
+    cout << '\n';
 
-    for (int i = 0; i < str.length(); ++i) {
-       cout << str[i] << ' ';
+    do {
+        cout << str << '\n';
     }
+    while (next_permutation(str.begin(), str.end()));
+    cout << str << '\n';
 
     return 0;
 
