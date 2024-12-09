@@ -17,6 +17,7 @@ int main() {
     for (string s : res) {
         cout << s << '\n';
     }
+
     return 0;
 
 }
