@@ -11,10 +11,7 @@ int main()
    ll n;
    cin >> n;
 
-   while (n != 0) {
-    cout << n*(n+1)/2 << endl;
-    cin >> n;
-   }
+   // n*(n+1)/2 % 2 != 0 --- NO
 
 
    return 0;
