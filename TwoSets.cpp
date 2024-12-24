@@ -12,6 +12,7 @@ int main()
    cin >> n;
 
    // n*(n+1)/2 % 2 != 0 --- NO
+   // n mod 4
 
 
    return 0;
