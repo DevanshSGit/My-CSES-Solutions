@@ -16,6 +16,8 @@ int main()
    // n mod 4 = 1 or 2 --- NO
    // n = 7, sum = 28, I - {1,2,4,7}, II - {3,5,6}
 
+   // for n mod 4 = 0
+   // (i, i+1, i+2, i+3), sum: 4i + 6
 
    return 0;
 }
