@@ -25,5 +25,31 @@ int main()
     return 0;
    }
 
+   cout << "YES\n";
+
+   ll t = sum/2;
+   vector<ll> s1, s2;
+
+   if (n % 4 == 0) {
+    for (ll i = 1; i <= n; i += 4) {
+        s1.push_back(i);
+        s1.push_back(i+3);
+        s2.push_back(i+1);
+        s2.push_back(i+2);
+    }
+   }
+   else if (n % 4 == 3) {
+    s1.push_back(1);
+    s1.push_back(2);
+    s1.push_back(3);
+
+    for (ll i = 4; i < = n; i += 4) {
+        s1.push_back(i);
+        s1.push_back(i+3);
+        s2.push_back(i+1);
+        s2.push_back(i+2);
+    }
+   }
+
    return 0;
 }
