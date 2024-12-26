@@ -18,6 +18,10 @@ int main()
 
    // for n mod 4 = 0
    // (i, i+1, i+2, i+3), sum: 4i + 6
+   // I - {i, i+3}, II - {i+2, i+3}
+   // for n mod 4 = 3
+   // I - {1}, II - {2, 3}
+   // For 4 to n, same as n mod 4 = 0
 
    ll sum = n*(n+1)/2;
    if (sum % 2 != 0) {
@@ -40,8 +44,8 @@ int main()
    }
    else if (n % 4 == 3) {
     s1.push_back(1);
-    s1.push_back(2);
-    s1.push_back(3);
+    s2.push_back(2);
+    s2.push_back(3);
 
     for (ll i = 4; i < = n; i += 4) {
         s1.push_back(i);
@@ -50,6 +54,19 @@ int main()
         s2.push_back(i+2);
     }
    }
+
+   cout << s1.size() << "\n";
+   for (ll x : s1) {
+    cout << x << " ";
+   }
+   cout << "\n";
+
+   cout << s2.size() << "\n";
+   for (ll x : s2) {
+    cout << x << " ";
+   }
+   cout << "\n";
+
 
    return 0;
 }
