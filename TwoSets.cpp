@@ -47,7 +47,7 @@ int main()
     s2.push_back(2);
     s2.push_back(3);
 
-    for (ll i = 4; i < = n; i += 4) {
+    for (ll i = 4; i <= n; i += 4) {
         s1.push_back(i);
         s1.push_back(i+3);
         s2.push_back(i+1);
@@ -70,3 +70,4 @@ int main()
 
    return 0;
 }
+
