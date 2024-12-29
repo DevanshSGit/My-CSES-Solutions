@@ -44,7 +44,7 @@ int main()
    }
    else if (n % 4 == 3) {
     s1.push_back(1);
-    s2.push_back(2);
+    s1.push_back(2);
     s2.push_back(3);
 
     for (ll i = 4; i <= n; i += 4) {
