@@ -31,7 +31,6 @@ int main()
 
    cout << "YES\n";
 
-   ll t = sum/2;
    vector<ll> s1, s2;
 
    if (n % 4 == 0) {
