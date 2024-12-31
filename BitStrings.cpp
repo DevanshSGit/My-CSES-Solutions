@@ -4,6 +4,11 @@ using namespace std;
 #define ll long long
 const int MOD = 1e9 + 7;
 
+// modular arithmetic
+// (a*b)%c = [(a%c)*(b%c)]%c
+// n is even: a^n = (a^(n/2))^2
+// n is odd: a^n = a*a^(n-1)
+
 ll modularExponentiation(ll base, ll exp, ll mod) {
     ll res = 1;
     base = base % mod;
